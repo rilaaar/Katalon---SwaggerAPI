@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC - CreatePet</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>560d1ad7-4cc2-4b80-a4d4-0b7df9d26e98</testCaseGuid>
+</TestCaseEntity>

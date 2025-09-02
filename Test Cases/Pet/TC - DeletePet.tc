@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC - DeletePet</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9cc6d0d8-769a-4fa7-969d-14043190085f</testCaseGuid>
+</TestCaseEntity>
