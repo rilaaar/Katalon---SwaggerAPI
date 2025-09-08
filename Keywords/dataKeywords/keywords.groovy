@@ -40,4 +40,56 @@ public class keywords {
 		}
 		return sb.toString()
 	}
+
+	@Keyword
+	def generateRandomUserId(int length) {
+		String chars = "0123456789"
+		StringBuilder sb = new StringBuilder()
+		Random rand = new Random()
+
+		for (int i = 0; i < length; i++) {
+			sb.append(chars.charAt(rand.nextInt(chars.length())))
+		}
+
+		return sb.toString()
+	}
+
+	@Keyword
+	def generateRandomUsername(int length) {
+		String chars = "0123456789"
+		StringBuilder sb = new StringBuilder()
+		Random rand = new Random()
+
+		for (int i = 0; i < length; i++) {
+			sb.append(chars.charAt(rand.nextInt(chars.length())))
+		}
+
+		return "admin" + sb.toString()
+	}
+
+
+	@Keyword
+	def generateRandomPassword(int length) {
+		String chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#\$%^&*"
+		StringBuilder sb = new StringBuilder()
+		Random rand = new Random()
+
+		for (int i = 0; i < length; i++) {
+			sb.append(chars.charAt(rand.nextInt(chars.length())))
+		}
+		return "admin" + sb.toString()
+	}
+
+	@Keyword
+	def generateRandomPhone(int length) {
+		String chars = "0123456789"
+		StringBuilder sb = new StringBuilder()
+		Random rand = new Random()
+
+		for (int i = 0; i < length; i++) {
+			sb.append(chars.charAt(rand.nextInt(chars.length())))
+		}
+
+		return "62" + sb.toString()
+	}
 }
