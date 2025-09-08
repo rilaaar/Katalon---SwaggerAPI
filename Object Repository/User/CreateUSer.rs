@@ -10,7 +10,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;id\&quot;: \&quot;${GlobalVariable.randomUserId}\&quot;,\n  \&quot;username\&quot;: \&quot;${GlobalVariable.randomUsername}\&quot;,\n  \&quot;firstName\&quot;: \&quot;admin\&quot;,\n  \&quot;lastName\&quot;: \&quot;${GlobalVariable.randomUserId}\&quot;,\n  \&quot;email\&quot;: \&quot;${GlobalVariable.randomUsername}@mail.com\&quot;,\n  \&quot;password\&quot;: \&quot;${GlobalVariable.randomPassword}\&quot;,\n  \&quot;phone\&quot;: \&quot;${GlobalVariable.randomPhone}\&quot;,\n  \&quot;userStatus\&quot;: 0\n}&quot;,
+  &quot;text&quot;: &quot;[{\n  \&quot;id\&quot;: \&quot;${GlobalVariable.randomUserId}\&quot;,\n  \&quot;username\&quot;: \&quot;${GlobalVariable.randomUsername}\&quot;,\n  \&quot;firstName\&quot;: \&quot;admin\&quot;,\n  \&quot;lastName\&quot;: \&quot;${GlobalVariable.randomUserId}\&quot;,\n  \&quot;email\&quot;: \&quot;${GlobalVariable.randomUsername}@mail.com\&quot;,\n  \&quot;password\&quot;: \&quot;${GlobalVariable.randomPassword}\&quot;,\n  \&quot;phone\&quot;: \&quot;${GlobalVariable.randomPhone}\&quot;,\n  \&quot;userStatus\&quot;: 0\n }\n]&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -27,7 +27,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>${GlobalVariable.baseUrl}/user</restUrl>
+   <restUrl>${GlobalVariable.baseUrl}/user/createWithList</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

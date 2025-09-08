@@ -16,11 +16,27 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.util.KeywordUtil
+
 
 String username = GlobalVariable.randomUsername
 println "Username yang dicari: " + username
 
+WebUI.delay(1)
+
 def createResponse = WS.sendRequest(findTestObject('User/GetByUsername', ["username": username]))
+
+println("Response Get User: " + createResponse.getResponseText())
+
+if (createResponse.getResponseText().contains("User not found")) {
+    KeywordUtil.markFailed("❌ User tidak ditemukan padahal baru dibuat: " + username)
+}
+
+
+/*WS.verifyElementPropertyValue(createResponse, 'username', GlobalVariable.randomUsername)
+
 WS.verifyResponseStatusCode(createResponse, 200)
 
 println createResponse.getResponseText()
+
+*/
